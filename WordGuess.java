@@ -138,7 +138,7 @@ public class WordGuess{
 			}
 			catch(Exception e){
 				System.out.println("oh noz, there is an Exception: " + e + "\nTry again!");
-				userLetterGuess();
+				userWordGuess();
 			}		
 		}
 	}
