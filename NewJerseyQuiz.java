@@ -111,7 +111,7 @@ import java.io.*;
 				setUserEntry();
 				if(userEntry.equalsIgnoreCase(currentPlayer.getLastName())==false){
 					tries++;
-					if((userEntry.equalsIgnoreCase(currentPlayer.getLastName()) ^ tries == 5) == true){
+					if((userEntry.equalsIgnoreCase(currentPlayer.getLastName()) ^ tries == maxTries) == true){
 						System.out.println("You are out of attempts.  The correct answer is " + currentPlayer.getLastName() + ".");   
 					}
 					else{
@@ -139,7 +139,7 @@ import java.io.*;
 		
 		//constructor
 		public Jersey(String ln, int jn){
-			lastName = 	ln;
+			lastName = ln;
 			jerseyNumber = jn;
 		}
 		
